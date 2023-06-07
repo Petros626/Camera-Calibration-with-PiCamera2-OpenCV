@@ -20,7 +20,7 @@ Thus it is theoretically possible to use the tuning parameters as well as the no
 | - use the .json tuning_file  with a lot of algorithms (12) for RPi cameras | - Enable the old camera-stack for RPi and use the camera calibration for undistortion with the [OpenCV](https://github.com/opencv/opencv) provided algorithms (16) (more than [PiCamera2](https://github.com/raspberrypi/picamera2)) | - works, but the stream is very slow (suggestions for improvement welcome [github_calibtest.py](https://github.com/Petros626/Camera-Calibration-with-PiCamera2-OpenCV/blob/main/github_calibtest.py) [ir_cut_picamera2_array.py](https://github.com/Petros626/Camera-Calibration-with-PiCamera2-OpenCV/blob/main/camera_calibration/ir_cut_picamera2_array.py)) |   
 
 
-### HOWTO: camera calibration
+### Howto: camera calibration
 
 If you intend to calibrate your camera independently of [PiCamera2](https://github.com/raspberrypi/picamera2) due to strong distortion, I provide the following scripts. The first script is used for capturing with a 5 second timer, which is basically used for creating the images for the camera calibration.
 
