@@ -1,0 +1,47 @@
+This file compares the available useful parameters of the libraries PiCamera2 and OpenCV.
+
+PiCamera2:
+rpi.black_level     -    Specifies a default black level value to use for all three RGB channels
+rpi.dpc             -	 Defective Pixel Correction
+rpi.lux             -	 The values are derived from one of the Macbeth Chart calibration images
+rpi.noise           -	 Calculate the noise profile of the image
+rpi.geq             -	 Green Equalisation
+rpi.sdn             -	 Spatial Denoise
+rpi.awb             -	 Automatic White Balance
+rpi.agc             -	 Automatic Gain Control
+rpi.alsc            -	 Automatic Lens Shading Correction
+rpi.contrast        -	 Contrast
+rpi.ccm             -	 Colour Correction Matrices
+rpi.sharpen         -	 Sharpening
+
+= 12
+
+
+OpenCV:
+cv2.CAP_PROP_FRAME_WIDTH  -     Width
+cv2.CAP_PROP_FRAME_HEIGHT -     Height
+cv2.CAP_PROP_BRIGHTNESS   -     Brightness of the image (only for those cameras that support)
+cv2.CAP_PROP_CONTRAST     -     Contrast of the image (only for cameras)
+cv2.CAP_PROP_SATURATION   -     Saturation of the image (only for cameras)
+cv2.CAP_PROP_HUE          -     Hue of the image (only for cameras)
+cv2.CAP_PROP_GAIN         -     Gain of the image (only for those cameras that support)
+cv2.CAP_PROP_EXPOSURE     -     Exposure (only for those cameras that support)
+cv2.CAP_PROP_SHARPNESS    - 	/
+cv2.CAP_PROP_AUTO_EXPOSURE-	DC1394: exposure control done by camera, user can adjust reference level using this feature
+cv2.CAP_PROP_GAMMA        - 	/
+cv2.CAP_PROP_TEMPERATURE  - 	/
+cv2.CAP_PROP_ZOOM         - 	/
+cv2.CAP_PROP_FOCUS        - 	/
+cv2.CAP_PROP_BACKLIGHT    - 	/
+cv2.CAP_PROP_AUTOFOCUS    - 	/
+cv2.CAP_PROP_AUTO_WB      -     Enable/disable auto white-balance
+cv2.CAP_PROP_WB_TEMPERATURE -   White-balance color temperature
+
+= 16 (excluding width and height, which can be set also in PiCamera2)
+
+
+
+
+
+
+
