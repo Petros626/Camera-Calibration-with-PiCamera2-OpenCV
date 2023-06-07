@@ -11,7 +11,7 @@ If you do, you can consult the documentation of the parameters and experiment wi
 
 The adjustment of the camera used with this `tuning_file` offers a lot of adjustment, but you cannot fix lens distortion like radial/tangential distortion with it. For this purpose, however, the special camera calibration using [Camera Calibration](https://docs.opencv.org/4.x/dc/dbb/tutorial_py_calibration.html) can be used. 
 
-Thus it is theoretically possible to use the tuning parameters as well as the non-distortion for the camera recording.
+Thus it is theoretically possible to use the tuning parameters with [PiCamera2](https://github.com/raspberrypi/picamera2) as well as the non-distortion of [OpenCV](https://github.com/opencv/opencv) for the camera recording.
 
 ### Current options to use a camera with different API's
 
