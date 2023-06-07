@@ -1,4 +1,4 @@
-### Camera Calibration with PiCamera2 and/or OpenCV
+### Camera Calibration with OpenCV
 
 
 ![combined](https://github.com/Petros626/Camera-Calibration-with-PiCamera2-OpenCV/assets/62354721/6f1f7cef-93df-42df-b728-15e5cc0c9f66)
