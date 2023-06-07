@@ -37,4 +37,4 @@ The script needs the destination, where the calibration images for [OpenCV](http
 sudo python3 ir_cut_picamera2_timer.py --imgdir=calibration_images --res=1920x1080 --time=5
 ```
 
-__Note__: This script serves as the basis for the actual calibration (see **Camera Calibration with PiCamera2 and OpenCV**). Further information here [Camera Calibration](https://docs.opencv.org/4.x/dc/dbb/tutorial_py_calibration.html).
+__Note__: Further information here [Camera Calibration](https://docs.opencv.org/4.x/dc/dbb/tutorial_py_calibration.html).
