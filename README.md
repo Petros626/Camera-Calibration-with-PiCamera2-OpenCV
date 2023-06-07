@@ -2,10 +2,7 @@
 
 
 ![calibration_images_4](https://github.com/Petros626/Camera-Calibration-with-PiCamera2-OpenCV/assets/62354721/62ac3fcb-9a7d-4e80-9d54-5b2bcf6145e3)
-![calibration_images_17](https://github.com/Petros626/Camera-Calibration-with-PiCamera2-OpenCV/assets/62354721/bf5cb1c8-bae9-4f00-860f-29ce8f58cf42)
-![calibration_images_32](https://github.com/Petros626/Camera-Calibration-with-PiCamera2-OpenCV/assets/62354721/29ff5cec-d0ff-4be9-ab58-9235b4ab8683)
-![calibration_images_35](https://github.com/Petros626/Camera-Calibration-with-PiCamera2-OpenCV/assets/62354721/f2b3fffd-60a4-4652-8d11-8e174316ff0c)
-![calibration_images_1](https://github.com/Petros626/Camera-Calibration-with-PiCamera2-OpenCV/assets/62354721/aac391d2-941a-4574-9e5e-ca047ea7c337)
+
 
 
 The new camera stack of the systems Bullseye 32-bit and 64-bit does not work with [OpenCV](https://github.com/opencv/opencv) for video applications, for this you have to activate the old camera stack, but with mismatch of the function of the new library [PiCamera2](https://github.com/raspberrypi/picamera2). 
