@@ -30,3 +30,11 @@ This second script loads the calibration images of the default folder "calib_ima
 ```python
 python3 calibrate_camera.py --imgdir=calib_imabes --savedir=undistorted_images --board=9x6
 ```
+
+The script needs the destination, where the calibration images for [OpenCV](https://github.com/opencv/opencv) [Camera Calibration](https://docs.opencv.org/4.x/dc/dbb/tutorial_py_calibration.html) get saved. Additionally you can adjust the time before a picture is taken, to position the chessboard before taking the image. To achieve a sufficient accuracy it's recommended to take between 10-20 (or more) images of the chessboard.
+
+```python
+sudo python3 ir_cut_picamera2_timer.py --imgdir=calibration_images --res=1920x1080 --time=5
+```
+
+__Note__: This script serves as the basis for the actual calibration (see **Camera Calibration with PiCamera2 and OpenCV**). Further information here [Camera Calibration](https://docs.opencv.org/4.x/dc/dbb/tutorial_py_calibration.html).
