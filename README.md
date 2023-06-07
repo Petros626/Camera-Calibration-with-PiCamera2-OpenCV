@@ -14,3 +14,19 @@ Thus it is theoretically possible to use the tuning parameters as well as the no
 |    PiCamera2              |      OpenCV                   |   PiCamera2&OpenCV
 |---------------------------|-------------------------------|-------------------|
 | - use the .json tuning_file  with a lot of algorithms (12) for RPi cameras | - Enable the old camera-stack for RPi and use the camera calibration for undistortion with the [OpenCV](https://github.com/opencv/opencv) provided algorithms (16) (more than [PiCamera2](https://github.com/raspberrypi/picamera2)) | - works, but the stream is very slow (suggestions for improvement welcome [github_calibtest.py](https://github.com/Petros626/Camera-Calibration-with-PiCamera2-OpenCV/blob/main/github_calibtest.py) [ir_cut_picamera2_array.py](https://github.com/Petros626/Camera-Calibration-with-PiCamera2-OpenCV/blob/main/camera_calibration/ir_cut_picamera2_array.py)) |   
+
+
+### Only camera calibration
+
+If you intend to calibrate your camera independently of [PiCamera2](https://github.com/raspberrypi/picamera2) due to strong distortion, I provide the following scripts. The first script is used for capturing with a 5 second timer, which is basically used for creating the images for the camera calibration.
+
+Take and save pictures with self-triggered timer:
+```python
+ir_cut_picamera2_timer.py: 
+```
+
+This second script loads the calibration images of the default folder "calib_images" you have taken with the `ir_cut_picamera2_timer.py`script. Further you must give the folder, where the undistorted images after calibration get saved. The last argument is the board dimension, which must be given correctly, because many people make a mistake here, which causes that the algorithms can't find all corners and return `False` for some calibration images. 
+
+```python
+python3 calibrate_camera.py --imgdir=calib_imabes --savedir=undistorted_images --board=9x6
+```
